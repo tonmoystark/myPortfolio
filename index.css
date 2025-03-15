@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color:#090502;
+}
+.light{
+    background-color: lightblue;
+    color: black;
+}
+.dark2{
+    background-color: #090502;
+    color: white;
+}
+.dark{
+    background-color: #090502;
+    color: white;
+}
+.bgWhite{
+    background-color: dodgerblue;
+    color: black;
+}
+.text{
+    color: white;
+}
+
+/*navibar css work*/
+.navBa{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px #13ab91 solid;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .navBa{
+        
+        height: fit-content;
+    }
+    .lightNav{
+        height: fit-content;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }   
+    .service{
+        height: fit-content;
+    }
+}
+
+.navBa .menu a{
+    margin-left: 2rem;
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navBa .btn{
+    padding: 10px 15px;
+    background-color: #13ab91;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: "exo 2", sans-serif;
+    border: none;
+    outline: none;
+    color: white;
+}
+.navBa .btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    
+}
+.navBa .btn:hover{
+    box-shadow: 0 0 40px chartreuse;
+    color: blanchedalmond;
+    text-shadow: 0 0 20px;
+    text-decoration: none;
+    font-family: "kode mono", sans-serif;
+    cursor: pointer;
+}
+.navBa .menu a:hover{
+    color: lightcoral;
+    text-shadow: 0 0 20px;
+    text-decoration: underline;
+    
+}
+.logoPic:hover{
+    animation-name: logo;
+    animation-duration: 2s;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #13ab91;
+    
+
+}
+@keyframes logo {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+/* the theme changer begins */
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #522ba7;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+  }
+  /* the theme changer ends */
+    /* the end of navibar css work*/
+
+/*commences of the home*/
+.header{
+    height: 650px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #13ab91;
+}
+.header .me{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 80px;
+}
+.header .me:hover{
+    box-shadow: 0 0 20px #13ab91,0 0 20px white;
+    cursor: pointer;
+}
+
+.header h1{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 4rem;
+    font-family: "Kode Mono", sans-serif;
+}
+.header .btnCV{
+    outline: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #13ab91;
+    font-family: "Exo 2", sans-serif;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+.header .btnCV:hover{
+    box-shadow: 0 0 20px #13ab91;
+    color: white;
+    cursor: pointer;
+}
+/*The end of the home*/
+
+/*commences of the about*/
+
+.aboutInfo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.aboutNameInfo {
+    width: 400px;
+}
+.aboutNameInfo h1,p{
+    font-family: "Exo 2", sans-serif;
+    margin-top: 15px;
+}
+.aboutNameInfo p{
+    text-align: justify;
+    font-size: 1rem;
+}
+.aboutNameInfo h1 span{
+    font-family: "kode Mono", sans-serif;
+    color: white;
+}
+.aboutNameInfo .education{
+    font-family: "kode mono", sans-serif;
+}
+.socialLinks .icon{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-right: 1.2345rem;
+    border-radius: 50%;
+}
+.socialLinks .icon:hover{
+    text-shadow: 0 0 20px #13ab91;
+    color: red;
+    border-radius: 50%;
+}
+
+
+
+.aboutSkill{
+    width: 400px;
+    margin-top: 15px;
+}
+.aboutSkill meter{
+    width: 90%;
+    height: 2rem;
+}
+.aboutSkill h1{
+    font-family: "kode mono", sans-serif;
+}
+
+/*the end of the About*/
+
+/* Beginning of the services*/
+
+.service{
+    width: 100%;
+}
+.service h1{
+    text-align: center;
+    font-family: "kode mono", sans-serif;
+    font-size: 3rem;
+    color: white;
+    padding-top: 2rem;
+}
+.service .serviceList{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;  
+}
+.service .serviceList .font{
+    font-size: 3rem;
+    color: aqua;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+}
+.service .serviceList .serviceInfo{
+    margin: 1rem;
+    width: 400px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+
+}
+.service .serviceList .serviceInfo .serviceWriting{
+    text-align: justify;
+    font-family: "Exo 2", sans-serif;
+}
+.service .serviceList .serviceInfo h2{
+    font-family: "kode mono", sans-serif;
+}
+.service .serviceList .serviceInfo:hover{
+    box-shadow: 0 0 20px #13ab91;
+    background-color: chartreuse;
+    color: black;
+}
+/*the end of the services*/
+
+/*beginning of the clints*/
+
+.clints{
+    color: white;
+    border-bottom:1px solid #13ab91 ;
+    padding-bottom: 1rem;
+}
+.clints h1{
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: "kode mono",sans-serif;
+    color: #13ab91;
+}
+.clintsAll{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+
+}
+.clints .clintsAll div{
+    border-radius: 10px;
+    background-color: #090502;
+}
+.clints .clintsAll div img{
+    margin: 1rem;
+}
+.clints .clintsAll div h2{
+    margin: 1rem;
+    font-family: "kode mono",sans-serif;
+}
+.clints .clintsAll div p{
+    font-family: "Exo 2", sans-serif;
+    padding: 1rem;
+}
+
+.clints .clintsAll div:hover{
+    box-shadow: 0 0 20px #13ab91;
+}
+
+/*the end of the clints*/
+
+.hire{
+    width: 100%;
+    box-sizing: border-box;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    background-color: #1E1F23;
+}
+.hire .form{
+    width: 500px;
+    height: 450px;
+    border: 1px black solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #13ab91;
+    text-align: center;
+}
+.hire .form h2{
+    padding: 1rem;
+    font-family: "kode mono", sans-serif;
+}
+.hire .form input{
+    width: 60%;
+    margin: 7px 12px;
+    height: 2.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+}
+.hire .form textarea{
+    margin: 7px 12px;
+    width: 55%;
+    height: 3.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.hire .form button{
+    margin-top: 1rem;
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+.hire .form button:hover{
+    box-shadow: 0 0 20px #13ab91;
+    background-color: chartreuse;
+    text-shadow: 0 0 20px white;
+}
